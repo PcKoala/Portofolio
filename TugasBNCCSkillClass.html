@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="aruna123.css">
+</head>
+<body>
+
+<!-- =============================================
+    NAVIGATION / HEADER
+============================================== -->
+<header class="header">
+  <nav class="nav container">
+
+    <a href="#" class="logo">Logo</a>
+
+    <div class="nav__wrapper" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+
+     <div class="nav__actions">
+      <button id="theme-toggle">🌙</button>
+
+      <button class="hamburger" id="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+
+<script src="style.js"></script>   
+<main id="main-content">
+
+    <!-- =============================================
+        HERO SECTION
+    ============================================== -->
+    <section id="home" class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">Hi, I'm <span class="text-accent">Aruna</span></h1>
+                <p class="hero__subtitle">I build website for fun</p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+        ABOUT SECTION
+    ============================================== -->
+    <section id="about" class="about">
+        <div class="about__container container">
+            <div class="about__grid">
+                <div class="about__image-wrapper">
+                    <figure class="about__figure">
+                        <img src="Arunaaruna.jpeg   " 
+                             alt="Professional headshot of [Your Name]" 
+                             class="about__img" 
+                             width="400" 
+                             height="400"
+                             loading="lazy">
+                        <figcaption class="about__caption">Frontend Developer based in Malang</figcaption>
+                    </figure>
+                </div>
+
+                <div class="about__text-wrapper">
+                    <h3 class="section-title">About Me</h3>
+                    <div class="about__bio">
+                        <p>
+                            I am a detail-oriented Frontend Developer who loves transforming creative ideas into functional and engaging web experiences. With a strong foundation in HTML, CSS, and JavaScript, I build responsive and modern websites optimized for both performance and usability.
+                        </p>
+                        <p>
+                            I am constantly learning and exploring new technologies to sharpen my skills and stay up-to-date with industry trends. My goal is to create digital products that are not only visually appealing but also intuitive and impactful. 
+                        </p>
+                    </div>
+                    <a href="/resume.pdf" class="btn btn--secondary" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+        PROJECTS SECTION
+    ============================================== -->
+    <section id="projects" class="projects">
+        <div class="projects__container container">
+            <h3 class="section-title">Selected Projects</h3>
+            
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-card__image-wrapper">
+                        <img src="19c03662fb58ed2cc6c41bb4df49ebfd.png" alt="Interface preview of E-commerce Dashboard" class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">Hackaton</h4>
+                        <p class="project-card__description">
+                            A high-performance web platform built during a competitive hackathon event.
+                        <div class="project-card__tech-stack">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/user/repo" class="project-link" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="https://demo.example.com" class="project-link project-link--live" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-card__image-wrapper">
+                        <img src="kerenn9.jpg" alt="Interface preview of Task Management App" class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">Listing Web</h4>
+                        <p class="project-card__description">
+                            A dynamic listing platform built with Next.js and Prisma, designed to streamline data management and user interaction.
+                        </p>
+                        <div class="project-card__tech-stack">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Prisma</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="#" class="project-link project-link--live" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <div class="project-card__image-wrapper">
+                        <img src="Screenshot-2024-01-25-125829.jpg" alt="Interface preview of Weather Forecast PWA" class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">Weather Forecast PWA</h4>
+                        <p class="project-card__description">
+                            A hyper-local weather application with offline support and push notifications.
+                        </p>
+                        <div class="project-card__tech-stack">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Service Workers</span>
+                            <span class="tag">Sass</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="#" class="project-link project-link--live" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+        CONTACT SECTION
+    ============================================== -->
+    <section id="contact" class="contact">
+        <div class="contact__container container">
+            <h3 class="section-title">Get In Touch</h3>
+            <div class="contact__wrapper">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="user-name" class="form-label">Full Name</label>
+                        <input type="text" id="user-name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email" class="form-label">Email Address</label>
+                        <input type="email" id="user-email" name="email" class="form-input" placeholder="email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-message" class="form-label">Message</label>
+                        <textarea id="user-message" name="message" class="form-textarea" placeholder="Tell me about your project..." rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- =============================================
+    FOOTER
+============================================== -->
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__content">
+            <p class="footer__copyright">
+                &copy; 2026 Aruna. All rights reserved. Designed with ❤️ and Accessibility in mind.
+            </p>
+            
+            <ul class="social-links" aria-label="Social Media Profiles">
+                <li class="social-links__item">
+                    <a href="https://github.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow me on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a href="https://twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
